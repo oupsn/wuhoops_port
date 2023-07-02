@@ -1,11 +1,18 @@
-import Lottie from "lottie-react";
-import "./App.css";
-import meditatingfox from "./assets/meditating-fox.json";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./page/home";
+import NotFound from "./page/notFound";
 
-const App = () => {
+function App() {
   return (
-      <Lottie style={{ height: "40vw" }} animationData={meditatingfox} />
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
   );
-};
-
+}
 export default App;
