@@ -1,8 +1,8 @@
-import PointNavigationMenuStyle from "../component/navBar";
+import NavBar from "../component/navBar";
 const Home = () => {
   return (
     <>
-    <PointNavigationMenuStyle />
+    <NavBar />
     </>
   );
 };
