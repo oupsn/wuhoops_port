@@ -1,8 +1,12 @@
 import NavBar from "../component/navBar";
+import About from "./about";
+import Projects from "./projects";
 const Home = () => {
   return (
     <>
-    <NavBar />
+        <NavBar />
+        <About />
+        <Projects />
     </>
   );
 };
