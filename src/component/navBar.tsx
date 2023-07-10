@@ -31,7 +31,7 @@ export default function NavBar() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  focus:outline-none">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-zinc-400  focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -48,15 +48,14 @@ export default function NavBar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-6">
-                    <div className="inline-block h-auto rounded-full min-h-[1em] w-0.5 self-stretch bg-gray-300 opacity-100 dark:opacity-50"></div>
+                    <div className="inline-block h-auto rounded-full min-h-[1em] w-0.5 self-stretch bg-zinc-300 opacity-100 dark:opacity-50"></div>
                     {navigation.map((item) => (
                       <p
                         key={item.name}
                         onClick={() =>{handleClickScroll(item.href)}}
                         className={classNames(
-                          "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
+                          "text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
                         )}
-                        aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </p>
@@ -77,9 +76,8 @@ export default function NavBar() {
                   key={item.name}
                   onClick={() =>{handleClickScroll(item.href)}}
                   className={classNames(
-                    "text-gray-600 active:bg-gray-200 active:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
+                    "text-zinc-600 active:bg-zinc-200 active:text-zinc-900 block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </p>

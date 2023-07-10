@@ -2,7 +2,7 @@
 
 const projects = () => {
   return (
-    <div id='projects' className='h-screen bg-gray-300'>projects</div>
+    <div id='projects' className='h-screen bg-zinc-300'>projects</div>
   )
 }
 
