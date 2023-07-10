@@ -14,14 +14,14 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="px-4 py-4 sm:flex w-full fixed">
+    <Disclosure  data-aos="fade-down" as="nav" className="px-4 py-4 sm:flex w-full fixed">
       {({ open }) => (
         <>
           <div className="bg-white mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 shadow-md font-bold rounded-xl">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400  focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -32,21 +32,18 @@ export default function NavBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <p className="block h-8 w-auto lg:hidden">Wuhoops</p>
-                  <p className="hidden h-8 w-auto lg:block">Wuhoops</p>
+                  <a href="#" className="block h-8 w-auto lg:hidden">Wuhoops</a>
+                  <a className="hidden h-8 w-auto lg:block">Wuhoops</a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-6">
-                    <div className="inline-block h-auto rounded-full min-h-[1em] w-1 self-stretch bg-gray-300 opacity-100 dark:opacity-50"></div>
+                    <div className="inline-block h-auto rounded-full min-h-[1em] w-0.5 self-stretch bg-gray-300 opacity-100 dark:opacity-50"></div>
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "transition ease-in-out text-gray-600 hover:bg-gray-200 hover:text-black",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -61,7 +58,7 @@ export default function NavBar() {
             <div
               className={`${
                 open ? "h-40" : "h-0"
-              } transition-all duration-500 overflow-hidden`}
+              } transition-all duration-500 overflow-hidden sm:h-0`}
             >
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
@@ -70,10 +67,7 @@ export default function NavBar() {
                     as="a"
                     href={item.href}
                     className={classNames(
-                      item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-600 hover:bg-gray-200 hover:text-black",
-                      "block rounded-md px-3 py-2 text-base font-medium"
+                      "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}
                   >

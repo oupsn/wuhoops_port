@@ -1,14 +1,10 @@
 import React from 'react'
 
+type Props = {}
 
-const about = () => {
+const about = (props: Props) => {
   return (
-    <>
-    <div id='about' className='h-screen bg-gray-100 flex justify-center items-center'>
-      <p className='text-xl font-bold font-mono'>Hi there,</p>
-      <p className='text-xl font-bold font-mono'>Wu's here.</p>
-    </div>
-    </>
+    <div id='about' className='h-screen bg-gray-700'>about</div>
   )
 }
 
