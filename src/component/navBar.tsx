@@ -1,6 +1,5 @@
-import { Fragment, useState } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "About", href: "#about", current: true },
@@ -14,7 +13,11 @@ function classNames(...classes: string[]) {
 
 export default function NavBar() {
   return (
-    <Disclosure  data-aos="fade-down" as="nav" className="px-4 py-4 sm:flex w-full fixed">
+    <Disclosure
+      data-aos="fade-down"
+      as="nav"
+      className="px-4 py-4 sm:flex w-full fixed"
+    >
       {({ open }) => (
         <>
           <div className="bg-white mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 shadow-md font-bold rounded-xl">
@@ -32,7 +35,9 @@ export default function NavBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <a href="#" className="block h-8 w-auto lg:hidden">Wuhoops</a>
+                  <a href="#" className="block h-8 w-auto lg:hidden">
+                    Wuhoops
+                  </a>
                   <a className="hidden h-8 w-auto lg:block">Wuhoops</a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">

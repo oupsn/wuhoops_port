@@ -1,8 +1,6 @@
-import React from 'react'
+ {}
 
-type Props = {}
-
-const projects = (props: Props) => {
+const projects = () => {
   return (
     <div id='projects' className='h-screen bg-gray-300'>projects</div>
   )
