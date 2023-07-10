@@ -2,14 +2,21 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "About", href: "#about", current: true },
-  { name: "Projects", href: "#projects", current: false },
-  { name: "Contact", href: "#contact", current: false },
+  { name: "About", href: "about"},
+  { name: "Projects", href: "projects"},
+  { name: "Contact", href: "contact"},
 ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+
+const handleClickScroll = (target: string) => {
+  const element = document.getElementById(target);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 
 export default function NavBar() {
   return (
@@ -35,7 +42,7 @@ export default function NavBar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <a href="#" className="block h-8 w-auto">
+                  <a onClick={() =>{handleClickScroll('hero')}} className="block h-8 w-auto cursor-pointer">
                     Wuhoops
                   </a>
                 </div>
@@ -43,16 +50,16 @@ export default function NavBar() {
                   <div className="flex space-x-6">
                     <div className="inline-block h-auto rounded-full min-h-[1em] w-0.5 self-stretch bg-gray-300 opacity-100 dark:opacity-50"></div>
                     {navigation.map((item) => (
-                      <a
+                      <p
                         key={item.name}
-                        href={item.href}
+                        onClick={() =>{handleClickScroll(item.href)}}
                         className={classNames(
-                          "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
+                          "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </p>
                     ))}
                   </div>
                 </div>
@@ -66,17 +73,16 @@ export default function NavBar() {
             >
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className={classNames(
-                      "text-gray-600 hover:bg-gray-200 hover:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
-                    )}
-                    aria-current={item.current ? "page" : undefined}
-                  >
-                    {item.name}
-                  </Disclosure.Button>
+                  <p
+                  key={item.name}
+                  onClick={() =>{handleClickScroll(item.href)}}
+                  className={classNames(
+                    "text-gray-600 active:bg-gray-200 active:text-gray-900 block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                  aria-current={item.current ? "page" : undefined}
+                >
+                  {item.name}
+                </p>
                 ))}
               </div>
             </div>

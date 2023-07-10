@@ -1,3 +1,4 @@
+import BackToTop from "../component/backToTop";
 import NavBar from "../component/navBar";
 import About from "./about";
 import Hero from "./hero";
@@ -9,6 +10,7 @@ const Home = () => {
         <Hero />
         <About />
         <Projects />
+        <BackToTop />
     </>
   );
 };
