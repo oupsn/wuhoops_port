@@ -3,9 +3,9 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "About", href: "#", current: true },
-  { name: "Projects", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "About", href: "#about", current: true },
+  { name: "Projects", href: "#projects", current: false },
+  { name: "Contact", href: "#contact", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -58,7 +58,11 @@ export default function NavBar() {
               </div>
             </div>
 
-            <Disclosure.Panel className="sm:hidden">
+            <div
+              className={`${
+                open ? "h-40" : "h-0"
+              } transition-all duration-500 overflow-hidden`}
+            >
               <div className="space-y-1 px-2 pb-3 pt-2">
                 {navigation.map((item) => (
                   <Disclosure.Button
@@ -77,7 +81,7 @@ export default function NavBar() {
                   </Disclosure.Button>
                 ))}
               </div>
-            </Disclosure.Panel>
+            </div>
           </div>
         </>
       )}
