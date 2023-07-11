@@ -27,8 +27,13 @@ export default function NavBar() {
   }, [isMobile]);
 
   return (
-    <div data-aos="fade-down" className="px-4 py-4 sm:flex w-full fixed">
-      <div className="bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md font-bold rounded-xl">
+    <div
+      data-aos="fade"
+      data-aos-duration="1000"
+      data-aos-delay="2400"
+      className="px-4 py-4 sm:flex w-full fixed"
+    >
+      <div className="bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -45,16 +50,16 @@ export default function NavBar() {
             </div>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center">
-              <a
+            <div className="flex space-x-6">
+              <p
                 onClick={() => {
                   handleClickScroll("hero");
                   setOpen(false);
                 }}
-                className="block h-8 w-auto cursor-pointer"
+                className="text-zinc-900 block px-3 py-1 text-xl cursor-pointer font-bold"
               >
-                Wuhoops
-              </a>
+                WUHOOPS
+              </p>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-6">
