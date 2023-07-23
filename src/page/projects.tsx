@@ -13,17 +13,6 @@ const projects = () => {
         Projects
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10 md:mb-0">
-        {/* {PROJECTS.map((pj) => {
-          return (
-            <Card
-              key={pj.id}
-              title={pj.topic}
-              detail={pj.description}
-              src={pj.src}
-            />
-          );
-        })} */}
-
         {PROJECTS.map((pj) => {
           return (
             <div className="card w-96 bg-white outline outline-offset-4 outline-zinc-300 cursor-pointer">
