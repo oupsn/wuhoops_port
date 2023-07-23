@@ -1,4 +1,5 @@
 import BackToTop from "../component/backToTop";
+import Footer from "../component/footer";
 import NavBar from "../component/navBar";
 import StartTour from "../component/startTour";
 import About from "./about";
@@ -8,11 +9,12 @@ const Home = () => {
   return (
     <>
         <NavBar />
-        <Hero />
         <StartTour />
+        <BackToTop />
+        <Hero />
         <About />
         <Projects />
-        <BackToTop />
+        <Footer />
     </>
   );
 };
