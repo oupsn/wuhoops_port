@@ -26,7 +26,7 @@ const backToTop = () => {
     };
   }, []);
   return (
-    <div className="fixed bottom-10 right-10">
+    <div className="fixed bottom-10 right-10 z-[999]">
       <button
         type="button"
         onClick={scrollToTop}
