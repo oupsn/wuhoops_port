@@ -1,6 +1,5 @@
 import PROJECTS from "../assets/projects.ts";
 import { IoIosArrowForward } from "react-icons/io";
-import grey from "../../public/web-icon.png";
 import { Link } from "react-router-dom";
 
 const projects = () => {
