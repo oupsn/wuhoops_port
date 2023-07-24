@@ -7,7 +7,7 @@ const projects = () => {
   return (
     <div
       id="projects"
-      className="h-fit 2xl:h-screen bg-zinc-100 flex flex-col justify-center items-center"
+      className="text-zinc-900 h-fit 2xl:h-screen bg-zinc-100 flex flex-col justify-center items-center"
     >
       <p className="text-4xl font-bold mb-10 mt-[120px] 2xl:mt-10">Projects</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10 2xl:mb-0">
