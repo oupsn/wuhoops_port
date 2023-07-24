@@ -5,15 +5,17 @@ const PROJECTS = [
     "description": "CS22 Integrated project I. A social media for KMUTT's student.",
     "year": "2023",
     "stack": ["React","TypeScript", "ChakraUI","Prisma", "Axios", "PostgreSQL", "Figma"],
-    "src": "https://github.com/CSSIT22/studentlife"
+    "src": "https://github.com/CSSIT22/studentlife",
+    "link": "modlifes"
   },
   {
     "id": "02",
     "topic": "Paigun",
-    "description": "A ride-sharing application.",
+    "description": "Integrated project II. A ride-sharing application.",
     "year": "2023",
     "stack": ["Flutter", "Supabase", "Firebase", "Onesignal", "Figma"],
-    "src": "https://github.com/wuhoops/Paigun"
+    "src": "https://github.com/wuhoops/Paigun",
+    "link": "paigun"
   },
   {
     "id": "03",
@@ -21,7 +23,8 @@ const PROJECTS = [
     "description": "To-do list with a mini challenge feature.",
     "year": "2023",
     "stack": ["Flutter", "Firebase", "Figma"],
-    "src": "https://github.com/wuhoops/Checkmate"
+    "src": "https://github.com/wuhoops/Checkmate",
+    "link": "checkmate"
   },
   {
     "id": "04",
@@ -29,7 +32,8 @@ const PROJECTS = [
     "description": "My portfolio website.",
     "year": "2023",
     "stack": ["React", "Tailwind"],
-    "src": "https://github.com/wuhoops"
+    "src": "https://github.com/wuhoops",
+    "link": "wuhoops-portfoilo"
   },
   {
     "id": "05",
@@ -37,7 +41,8 @@ const PROJECTS = [
     "description": "CSC105 web-app development exam.",
     "year": "2022",
     "stack": ["React","JavaScript", "Bootstrap"],
-    "src": "https://github.com/wuhoops/929EXAM"
+    "src": "https://github.com/wuhoops/929EXAM",
+    "link": "929exam"
   }
 ]
 

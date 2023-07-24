@@ -2,8 +2,8 @@ import { SocialIcon } from "react-social-icons";
 
 const footer = () => {
   return (
-    <div id="contact" className="bg-zinc-900">
-      <div className="flex justify-center gap-6 py-10">
+    <div id="contact" className="bg-zinc-900  py-8">
+      <div className="flex justify-center gap-6 mb-4">
         <SocialIcon
           url="https://github.com/wuhoops"
           bgColor="white"
@@ -20,6 +20,7 @@ const footer = () => {
           fgColor="black"
         />
       </div>
+      <p className="text-zinc-100 text-center"> Copyright &copy; 2023 Wuhoops. All Rights Reserved</p>
     </div>
   );
 };

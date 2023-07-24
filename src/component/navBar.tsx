@@ -31,7 +31,7 @@ export default function NavBar() {
       data-aos="fade"
       data-aos-duration="1000"
       data-aos-delay="2400"
-      className="px-4 py-4 sm:flex w-full fixed"
+      className="px-4 py-4 sm:flex w-full fixed z-[999]"
     >
       <div className="bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
