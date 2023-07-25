@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./page/home";
 import NotFound from "./page/notFound";
 import Backyard from "./page/backyard";
-import { DarkModeContext, DarkModeProvider } from "./context/darkModeContext";
+import { DarkModeProvider } from "./context/darkModeContext";
 
 function App() {
   return (

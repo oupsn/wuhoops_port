@@ -39,7 +39,7 @@ const projects = () => {
         })}
         <div className="self-center justify-self-center md:justify-self-start">
           <Link to={"/projects"}>
-            <div className="bg-zinc-900 dark:bg-white hover:bg-white dark:hover:bg-black active:bg-zinc-300hover:bg-zinc-300 inline-flex items-center rounded-full text-white dark:text-black active:text-black hover:text-black dark:hover:text-white shadow-md transition-all duration-100 sm:duration-300 hover:outline-none py-2 px-4 w-fit cursor-pointer">
+            <div className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
               <p>See more</p>
               <IoIosArrowForward />
             </div>
