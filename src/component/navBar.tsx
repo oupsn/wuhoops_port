@@ -1,6 +1,9 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { useEffect, useState } from "react";
+import { IconButton } from "@mui/material";
+import { useContext, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { DarkModeContext } from "../context/darkModeContext";
+import { MdModeNight, MdLightMode } from "react-icons/md";
 
 const navigation = [
   { name: "About", href: "about" },
@@ -20,6 +23,7 @@ const handleClickScroll = (target: string) => {
 };
 
 export default function NavBar() {
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   const isMobile = useMediaQuery({ query: `(max-width: 639px)` });
   const [open, setOpen] = useState(false);
   useEffect(() => {
@@ -33,7 +37,7 @@ export default function NavBar() {
       data-aos-delay="2400"
       className="px-4 py-4 sm:flex w-full fixed z-[999]"
     >
-      <div className="bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
+      <div className="dark:invert bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -51,6 +55,13 @@ export default function NavBar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex space-x-6">
+              <IconButton
+                sx={{ ml: 1 }}
+                onClick={toggleDarkMode}
+                color="inherit"
+              >
+                {darkMode ? <MdLightMode /> : <MdModeNight />}
+              </IconButton>
               <p
                 onClick={() => {
                   handleClickScroll("hero");
