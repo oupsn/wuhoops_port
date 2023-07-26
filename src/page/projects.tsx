@@ -2,22 +2,23 @@ import PROJECTS from "../assets/projects.ts";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 import projectCardDemo from "../assets/web-icon.png";
+import StackChips from "../component/stackChips.tsx";
 
 const projects = () => {
   return (
     <div
       id="projects"
-      className="transition-all h-fit 2xl:h-screen bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
+      className="transition-all bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
     >
       <p className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px] 2xl:mt-10">
         Projects
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10 2xl:mb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
         {PROJECTS.map((pj) => {
           return (
             <div
               onClick={() => window.open(pj.src, "_blank")}
-              className="card max-w-80 lg:w-80 bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all cursor-pointer"
+              className="card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all cursor-pointer"
             >
               <figure className="px-8 pt-8">
                 <img
@@ -33,6 +34,9 @@ const projects = () => {
                     {pj.description}
                   </span>
                 </p>
+              </div>
+              <div className=" px-4 pb-4">
+                {StackChips({stacks: pj.stack})}
               </div>
             </div>
           );
