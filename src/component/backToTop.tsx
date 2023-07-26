@@ -31,7 +31,7 @@ const backToTop = () => {
         type="button"
         onClick={scrollToTop}
         className={`
-          ${isVisible ? "opacity-100" : "opacity-0"}
+        ${isVisible ? "scale-100" : "scale-0"}
           bg-black  dark:bg-white  text-white  dark:text-black text-xl shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full p-4 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white`}
       >
         <FaArrowUp />
