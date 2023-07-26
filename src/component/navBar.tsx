@@ -37,13 +37,13 @@ export default function NavBar() {
       data-aos-delay="2400"
       className="px-4 py-4 sm:flex w-full fixed z-[999]"
     >
-      <div className="dark:invert bg-white mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
+      <div className=" bg-white dark:bg-black mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <div
               onClick={() => setOpen(!open)}
-              className="inline-flex items-center justify-center rounded-md p-2 text-zinc-400  focus:outline-none"
+              className="inline-flex items-center justify-center rounded-md p-2 text-zinc-600 dark:text-zinc-300 focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
               {open ? (
@@ -55,19 +55,12 @@ export default function NavBar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex space-x-6">
-              <IconButton
-                sx={{ ml: 1 }}
-                onClick={toggleDarkMode}
-                color="inherit"
-              >
-                {darkMode ? <MdLightMode /> : <MdModeNight />}
-              </IconButton>
               <p
                 onClick={() => {
                   handleClickScroll("hero");
                   setOpen(false);
                 }}
-                className="text-zinc-900 block px-3 py-1 text-xl cursor-pointer font-bold"
+                className="text-black dark:text-white block px-3 py-1 text-xl cursor-pointer font-bold"
               >
                 WUHOOPS
               </p>
@@ -82,12 +75,21 @@ export default function NavBar() {
                       handleClickScroll(item.href);
                     }}
                     className={classNames(
-                      "text-zinc-600 hover:bg-zinc-200 hover:text-zinc-900 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
+                      "text-zinc-600 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-100 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
                     )}
                   >
                     {item.name}
                   </p>
                 ))}
+                <div className="inline-block h-auto rounded-full min-h-[1em] w-0.5 self-stretch bg-zinc-300 opacity-100 dark:opacity-50"></div>
+                <IconButton
+                  sx={{ ml: 1 }}
+                  onClick={toggleDarkMode}
+                  color="inherit"
+                  className="text-black dark:text-white"
+                >
+                  {darkMode ? <MdLightMode /> : <MdModeNight />}
+                </IconButton>
               </div>
             </div>
           </div>
