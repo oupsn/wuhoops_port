@@ -37,7 +37,7 @@ export default function NavBar() {
       data-aos-delay="2400"
       className="px-4 py-4 sm:flex w-full fixed z-[999]"
     >
-      <div className=" bg-white dark:bg-black mx-auto max-w-7xl px-2 sm:px-8 shadow-md rounded-xl">
+      <div className=" bg-white dark:bg-black mx-auto max-w-7xl px-2 sm:px-8 shadow-md dark:shadow-zinc-600 dark:shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
