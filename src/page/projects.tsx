@@ -15,22 +15,47 @@ const projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
-            <div className="card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
-              <figure className="px-4 pt-4 w-full h-full">
-                <div className="rounded-2xl overflow-hidden w-full ">
-                  <img src={pj.image} alt={pj.alt} className="w-full " />
+            <div className="grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
+              <div className="overflow-hidden p-4 h-full w-full">
+                <div className="rounded-2xl overflow-hidden h-full">
+                  <div className="rounded-2xl overflow-hidden">
+                <img src={pj.image} alt={pj.alt} />
+
+                  </div>
+
                 </div>
-              </figure>
-              <div className="text-black dark:text-white card-body items-center text-center">
-                <h2 className="card-title">{pj.topic}</h2>
-                <p className="h-10 text-sm font-thin max-h-10 line-clamp-2 text-ellipsis">
-                  {pj.description}
-                </p>
               </div>
-              <div className=" px-4 pb-4">
-                {StackChips({ stacks: pj.stack, isExample: true })}
+              <div>
+                <div className="text-black dark:text-white card-body items-center text-center">
+                  <h2 className="card-title">{pj.topic}</h2>
+                  <p className="h-10 text-sm font-thin max-h-10 line-clamp-2 text-ellipsis">
+                    {pj.description}
+                  </p>
+                </div>
+                <div className=" px-4 pb-4">
+                  {StackChips({ stacks: pj.stack, isExample: true })}
+                </div>
               </div>
-              <div className="bg-white p-4 dark:bg-black text-black dark:text-white rounded-xl w-full h-full flex flex-col justify-center items-center absolute opacity-0 hover:opacity-100 transition-all">
+            </div>
+          );
+        })}
+        <div className="self-center justify-self-center md:justify-self-start">
+          <Link to={"/projects"}>
+            <div className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
+              <p>See more</p>
+              <IoIosArrowForward />
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default projects;
+
+{
+  /* <div className="bg-white p-4 dark:bg-black text-black dark:text-white rounded-xl w-full h-full flex flex-col justify-center items-center absolute opacity-0 hover:opacity-100 transition-all">
                 {pj.res != null ? (
                   <div>
                     <p className="font-bold">Responsibilities</p>
@@ -67,21 +92,5 @@ const projects = () => {
                     ""
                   )}
                 </div>
-              </div>
-            </div>
-          );
-        })}
-        <div className="self-center justify-self-center md:justify-self-start">
-          <Link to={"/projects"}>
-            <div className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
-              <p>See more</p>
-              <IoIosArrowForward />
-            </div>
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default projects;
+              </div> */
+}
