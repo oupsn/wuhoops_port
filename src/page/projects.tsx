@@ -15,7 +15,7 @@ const projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
-            <div className="group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
+            <div className="overflow-hidden group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
               <div className="overflow-hidden p-4 pb-0 h-full w-full">
                 <div className="rounded-2xl overflow-hidden h-full">
                   <div className="rounded-2xl overflow-hidden">
@@ -35,42 +35,45 @@ const projects = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-4 dark:bg-black text-black dark:text-white w-full h-full flex flex-col justify-center items-center absolute duration-200 scale-0 group-hover:scale-100 rounded-full group-hover:rounded-2xl transition-all">
-                {pj.res != null ? (
-                  <div>
-                    <p className="font-bold">Responsibilities</p>
-                    {pj.res?.map((res) => {
-                      return (
-                        <p className="text-start self-start">{`- ${res}`}</p>
-                      );
-                    })}
-                    <br />
-                    <p className="font-bold mb-2">Tech stack</p>
+              <div className="absolute w-full h-full">
+                <div className="absolute w-full h-full bg-white dark:bg-black transition-all duration-200 scale-0 group-hover:scale-150 rounded-full "></div>
+                <div className="absolute text-black dark:text-white p-4 w-full h-full transition-all duration-200 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
+                  {pj.res != null ? (
                     <div>
-                      {StackChips({ stacks: pj.stack, isExample: false })}
-                    </div>
-                    <br />
-                  </div>
-                ) : (
-                  ""
-                )}
-                <div className="flex gap-4">
-                  <div
-                    onClick={() => window.open(pj.src, "_blank")}
-                    className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
-                  >
-                    <p>Repository</p>
-                  </div>
-                  {pj.design != null ? (
-                    <div
-                      onClick={() => window.open(pj.design, "_blank")}
-                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
-                    >
-                      <p>UX/UI design</p>
+                      <p className="font-bold">Responsibilities</p>
+                      {pj.res?.map((res) => {
+                        return (
+                          <p className="text-start self-start">{`- ${res}`}</p>
+                        );
+                      })}
+                      <br />
+                      <p className="font-bold mb-2">Tech stack</p>
+                      <div>
+                        {StackChips({ stacks: pj.stack, isExample: false })}
+                      </div>
+                      <br />
                     </div>
                   ) : (
                     ""
                   )}
+                  <div className="flex gap-4">
+                    <div
+                      onClick={() => window.open(pj.src, "_blank")}
+                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                    >
+                      <p>Repository</p>
+                    </div>
+                    {pj.design != null ? (
+                      <div
+                        onClick={() => window.open(pj.design, "_blank")}
+                        className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                      >
+                        <p>UX/UI design</p>
+                      </div>
+                    ) : (
+                      ""
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
