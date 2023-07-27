@@ -15,14 +15,12 @@ const projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
-            <div className="grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
+            <div className="group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
               <div className="overflow-hidden p-4 pb-0 h-full w-full">
                 <div className="rounded-2xl overflow-hidden h-full">
                   <div className="rounded-2xl overflow-hidden">
-                <img src={pj.image} alt={pj.alt} />
-
+                    <img src={pj.image} alt={pj.alt} />
                   </div>
-
                 </div>
               </div>
               <div>
@@ -36,7 +34,8 @@ const projects = () => {
                   {StackChips({ stacks: pj.stack, isExample: true })}
                 </div>
               </div>
-              <div className="bg-white p-4 dark:bg-black text-black dark:text-white rounded-xl w-full h-full flex flex-col justify-center items-center absolute opacity-0 hover:opacity-100 transition-all">
+
+              <div className="bg-white p-4 dark:bg-black text-black dark:text-white w-full h-full flex flex-col justify-center items-center absolute scale-0 group-hover:scale-100 rounded-full group-hover:rounded-2xl transition-all">
                 {pj.res != null ? (
                   <div>
                     <p className="font-bold">Responsibilities</p>
