@@ -16,7 +16,7 @@ const projects = () => {
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
             <div className="grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
-              <div className="overflow-hidden p-4 h-full w-full">
+              <div className="overflow-hidden p-4 pb-0 h-full w-full">
                 <div className="rounded-2xl overflow-hidden h-full">
                   <div className="rounded-2xl overflow-hidden">
                 <img src={pj.image} alt={pj.alt} />
@@ -34,6 +34,44 @@ const projects = () => {
                 </div>
                 <div className=" px-4 pb-4">
                   {StackChips({ stacks: pj.stack, isExample: true })}
+                </div>
+              </div>
+              <div className="bg-white p-4 dark:bg-black text-black dark:text-white rounded-xl w-full h-full flex flex-col justify-center items-center absolute opacity-0 hover:opacity-100 transition-all">
+                {pj.res != null ? (
+                  <div>
+                    <p className="font-bold">Responsibilities</p>
+                    {pj.res?.map((res) => {
+                      return (
+                        <p className="text-start self-start">{`- ${res}`}</p>
+                      );
+                    })}
+                    <br />
+                    <p className="font-bold mb-2">Tech stack</p>
+                    <div>
+                      {StackChips({ stacks: pj.stack, isExample: false })}
+                    </div>
+                    <br />
+                  </div>
+                ) : (
+                  ""
+                )}
+                <div className="flex gap-4">
+                  <div
+                    onClick={() => window.open(pj.src, "_blank")}
+                    className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                  >
+                    <p>Repository</p>
+                  </div>
+                  {pj.design != null ? (
+                    <div
+                      onClick={() => window.open(pj.design, "_blank")}
+                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                    >
+                      <p>UX/UI design</p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </div>
