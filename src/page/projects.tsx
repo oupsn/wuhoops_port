@@ -35,7 +35,7 @@ const projects = () => {
                 </div>
               </div>
 
-              <div className="bg-white p-4 dark:bg-black text-black dark:text-white w-full h-full flex flex-col justify-center items-center absolute scale-0 group-hover:scale-100 rounded-full group-hover:rounded-2xl transition-all">
+              <div className="bg-white p-4 dark:bg-black text-black dark:text-white w-full h-full flex flex-col justify-center items-center absolute duration-200 scale-0 group-hover:scale-100 rounded-full group-hover:rounded-2xl transition-all">
                 {pj.res != null ? (
                   <div>
                     <p className="font-bold">Responsibilities</p>
