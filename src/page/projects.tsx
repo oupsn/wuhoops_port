@@ -57,14 +57,14 @@ const projects = () => {
                 <div className="flex gap-4">
                   <div
                     onClick={() => window.open(pj.src, "_blank")}
-                    className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                    className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
                   >
                     <p>Repository</p>
                   </div>
                   {pj.design != null ? (
                     <div
                       onClick={() => window.open(pj.design, "_blank")}
-                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
                     >
                       <p>UX/UI design</p>
                     </div>
