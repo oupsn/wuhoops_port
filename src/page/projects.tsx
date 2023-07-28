@@ -12,7 +12,7 @@ const projects = () => {
       <p data-aos="fade-up" className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px]">
         Projects
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-14 gap-10 mx-6 mb-10">
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
             <div key={pj.id} data-aos="fade-up" className="overflow-hidden group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
