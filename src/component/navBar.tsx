@@ -53,13 +53,13 @@ export default function NavBar() {
               )}
             </div>
             <IconButton
-                  sx={{ ml: 1 }}
-                  onClick={toggleDarkMode}
-                  color="inherit"
-                  className="text-black dark:text-white"
-                >
-                  {darkMode ? <MdLightMode /> : <MdModeNight />}
-                </IconButton>
+              sx={{ ml: 1 }}
+              onClick={toggleDarkMode}
+              color="inherit"
+              className="text-black dark:text-white"
+            >
+              {darkMode ? <MdLightMode /> : <MdModeNight />}
+            </IconButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex space-x-6">

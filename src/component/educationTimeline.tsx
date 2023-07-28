@@ -11,21 +11,17 @@ const educationTimeline = () => {
         </time>
       </div>
 
-
-
       <div className="flex flex-col xl:flex-row items-center grow ">
         <div className="z-10 flex items-center justify-center w-6 h-6 rounded-full">
           <BsFillRecordCircleFill />
         </div>
 
         <div className="flex xl:w-full bg-gray-200 w-0.5 h-20 xl:h-0.5 dark:bg-gray-700"></div>
-        
+
         <div className="z-10 flex items-center justify-center w-6 h-6 rounded-full">
           <BsFillRecordCircleFill />
         </div>
       </div>
-
-
 
       <div className="mt-3 max-w-[400px] text-center">
         <p className="text-lg font-semibold text-gray-900 dark:text-white">

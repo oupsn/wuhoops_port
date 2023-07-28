@@ -13,7 +13,7 @@ const about = () => {
       </div>
       <div data-aos="fade-up" className="max-w-6xl px-10 flex flex-col gap-20">
         <div>
-          <p className="text-6xl md:text-8xl font-bold text-center mb-4">
+          <p className="text-4xl sm:text-6xl md:text-8xl font-bold text-center mb-4">
             Pasinun Wittayawinit
           </p>
           <p className="text-xl text-center">
