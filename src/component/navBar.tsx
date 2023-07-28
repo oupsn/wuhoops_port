@@ -68,7 +68,7 @@ export default function NavBar() {
                   handleClickScroll("hero");
                   setOpen(false);
                 }}
-                className="text-black dark:text-white block px-3 py-1 text-xl cursor-pointer font-bold"
+                className="z-[999] text-black dark:text-white block px-3 py-1 text-xl cursor-pointer font-bold"
               >
                 WUHOOPS
               </p>

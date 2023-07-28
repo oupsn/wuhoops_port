@@ -5,7 +5,7 @@ const about = () => {
   return (
     <div
       id="about"
-      className="transition-all text-black dark:text-white min-h-screen bg-zinc-100 dark:bg-zinc-900 flex justify-center items-center"
+      className="transition-all text-black dark:text-white min-h-screen bg-zinc-100 dark:bg-zinc-900 flex justify-center"
     >
       <div data-aos="fade">
         <p className="text-zinc-400 dark:text-zinc-600 text-center -rotate-90 absolute -left-32 hidden lg:block">
