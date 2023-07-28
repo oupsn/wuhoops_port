@@ -7,15 +7,15 @@ const projects = () => {
   return (
     <div
       id="projects"
-      className="transition-all bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
+      className="min-h-screen transition-all bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
     >
-      <p className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px]">
+      <p data-aos="fade-up" className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px]">
         Projects
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 mb-10">
         {PROJECTS.slice(0, 5).map((pj) => {
           return (
-            <div className="overflow-hidden group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
+            <div key={pj.id} data-aos="fade-up" className="overflow-hidden group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all ">
               <div className="overflow-hidden p-4 pb-0 h-full w-full">
                 <div className="rounded-2xl overflow-hidden h-full">
                   <div className="rounded-2xl overflow-hidden">
@@ -36,8 +36,8 @@ const projects = () => {
               </div>
 
               <div className="absolute w-full h-full">
-                <div className="absolute w-full h-full bg-white dark:bg-black transition-all duration-200 scale-0 group-hover:scale-150 rounded-full "></div>
-                <div className="absolute text-black dark:text-white p-4 w-full h-full transition-all duration-200 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
+                <div className="absolute w-full h-full bg-white dark:bg-black transition-all duration-300 scale-0 group-hover:scale-150 rounded-full "></div>
+                <div className="absolute text-black dark:text-white p-4 w-full h-full transition-all duration-300 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
                   {pj.res != null ? (
                     <div>
                       <p className="font-bold">Responsibilities</p>
@@ -81,7 +81,7 @@ const projects = () => {
         })}
         <div className="self-center justify-self-center md:justify-self-start">
           <Link to={"/projects"}>
-            <div className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
+            <div data-aos="fade-up" className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
               <p>See more</p>
               <IoIosArrowForward />
             </div>

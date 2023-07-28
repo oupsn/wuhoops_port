@@ -37,9 +37,9 @@ export default function NavBar() {
       data-aos-delay="2400"
       className="px-4 py-4 sm:flex w-full fixed z-[999]"
     >
-      <div className=" bg-white dark:bg-black mx-auto max-w-7xl px-2 sm:px-8 shadow-md dark:shadow-zinc-600 dark:shadow-md rounded-xl">
+      <div className=" bg-white dark:bg-black mx-auto max-w-7xl px-4 sm:px-8 shadow-md dark:shadow-zinc-600 dark:shadow-md rounded-xl">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 w-full flex items-center sm:hidden justify-between">
             {/* Mobile menu button*/}
             <div
               onClick={() => setOpen(!open)}
@@ -52,6 +52,14 @@ export default function NavBar() {
                 <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
               )}
             </div>
+            <IconButton
+                  sx={{ ml: 1 }}
+                  onClick={toggleDarkMode}
+                  color="inherit"
+                  className="text-black dark:text-white"
+                >
+                  {darkMode ? <MdLightMode /> : <MdModeNight />}
+                </IconButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex space-x-6">
@@ -109,7 +117,7 @@ export default function NavBar() {
                   setOpen(!open);
                 }}
                 className={classNames(
-                  "text-zinc-600 active:bg-zinc-200 active:text-zinc-900 block rounded-md px-3 py-2 text-base font-medium"
+                  "text-zinc-600 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-100 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
                 )}
               >
                 {item.name}
