@@ -10,7 +10,7 @@ import { DarkModeContext } from "../context/darkModeContext";
 const Home = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className={`${darkMode ? "dark" : ""} `}>
+    <div className={`${darkMode ? "dark" : ""}`}>
       <NavBar />
       <StartTour />
       <BackToTop />
