@@ -50,7 +50,10 @@ const projects = () => {
                       <p className="font-bold">Responsibilities</p>
                       {pj.res?.map((res) => {
                         return (
-                          <p className="text-start self-start">{`- ${res}`}</p>
+                          <p
+                            key={res}
+                            className="text-start self-start"
+                          >{`- ${res}`}</p>
                         );
                       })}
                       <br />
