@@ -7,7 +7,7 @@ const projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen transition-all bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
+      className="min-h-screen bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
     >
       <p
         data-aos="fade-up"
@@ -43,8 +43,8 @@ const projects = () => {
               </div>
 
               <div className="absolute w-full h-full">
-                <div className="absolute w-full h-full bg-white dark:bg-black transition-all duration-300 scale-0 group-hover:scale-150 rounded-full "></div>
-                <div className="absolute text-black dark:text-white p-4 w-full h-full transition-all duration-300 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
+                <div className="absolute w-full h-full bg-white dark:bg-black duration-300 scale-0 group-hover:scale-150 rounded-full "></div>
+                <div className="absolute text-black dark:text-white p-4 w-full h-full duration-300 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
                   {pj.res != null ? (
                     <div>
                       <p className="font-bold">Responsibilities</p>
@@ -69,14 +69,14 @@ const projects = () => {
                   <div className="flex gap-4">
                     <div
                       onClick={() => window.open(pj.src, "_blank")}
-                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                      className="bg-black dark:bg-white text-white dark:text-black shadow-md inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
                     >
                       <p>Repository</p>
                     </div>
                     {pj.design != null ? (
                       <div
                         onClick={() => window.open(pj.design, "_blank")}
-                        className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
+                        className="bg-black dark:bg-white text-white dark:text-black shadow-md inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
                       >
                         <p>UX/UI design</p>
                       </div>
@@ -94,7 +94,7 @@ const projects = () => {
             <div
               data-aos="fade-up"
               data-aos-offset="-10"
-              className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white"
+              className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white"
             >
               <p>See more</p>
               <IoIosArrowForward />
@@ -107,44 +107,3 @@ const projects = () => {
 };
 
 export default projects;
-
-{
-  /* <div className="bg-white p-4 dark:bg-black text-black dark:text-white rounded-xl w-full h-full flex flex-col justify-center items-center absolute opacity-0 hover:opacity-100 transition-all">
-                {pj.res != null ? (
-                  <div>
-                    <p className="font-bold">Responsibilities</p>
-                    {pj.res?.map((res) => {
-                      return (
-                        <p className="text-start self-start">{`- ${res}`}</p>
-                      );
-                    })}
-                    <br />
-                    <p className="font-bold mb-2">Tech stack</p>
-                    <div>
-                      {StackChips({ stacks: pj.stack, isExample: false })}
-                    </div>
-                    <br />
-                  </div>
-                ) : (
-                  ""
-                )}
-                <div className="flex gap-4">
-                  <div
-                    onClick={() => window.open(pj.src, "_blank")}
-                    className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
-                  >
-                    <p>Repository</p>
-                  </div>
-                  {pj.design != null ? (
-                    <div
-                      onClick={() => window.open(pj.design, "_blank")}
-                      className="bg-black dark:bg-white text-white dark:text-black shadow-md transition-all duration-100 sm:duration-300 inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white cursor-pointer"
-                    >
-                      <p>UX/UI design</p>
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              </div> */
-}
