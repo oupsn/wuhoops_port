@@ -7,7 +7,7 @@ const projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen transition-all bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center"
+      className="min-h-screen bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center "
     >
       <p
         data-aos="fade-up"
@@ -20,8 +20,7 @@ const projects = () => {
           return (
             <div
               key={pj.id}
-              data-aos="fade-up"
-              className="overflow-hidden group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900 transition-all "
+              className="overflow-hidden transition-all group grid grid-rows-2 card max-w-[400px] max-h-[400px] bg-white dark:bg-black ring ring-offset-2 hover:ring-offset-[8px] ring-zinc-300 dark:ring-zinc-600 hover:ring-zinc-600 dark:hover:ring-zinc-300 ring-offset-zinc-100 dark:ring-offset-zinc-900"
             >
               <div className="overflow-hidden p-4 pb-0 h-full w-full">
                 <div className="rounded-2xl overflow-hidden h-full">
