@@ -1,7 +1,7 @@
 import { BsFillRecordCircleFill } from "react-icons/bs";
 const educationTimeline = () => {
   return (
-    <div className="flex flex-col xl:gap-4 items-center justify-between xl:flex-row">
+    <div className="grid grid-cols-none grid-rows-3 xl:grid-rows-none xl:grid-cols-3 xl:gap-4  items-center justify-center">
       <div className="mt-3 max-w-[400px] text-center">
         <p className="text-lg font-semibold text-gray-900 dark:text-white">
           Benchamarachuthit Chanthaburi School

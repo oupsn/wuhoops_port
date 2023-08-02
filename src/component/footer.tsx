@@ -2,8 +2,10 @@ import { SocialIcon } from "react-social-icons";
 
 const footer = () => {
   return (
-    <div id="contact" className="transition-all bg-zinc-900 dark:bg-zinc-100 py-8 flex flex-col gap-4">
-      
+    <div
+      id="contact"
+      className="transition-all bg-zinc-900 dark:bg-zinc-100 py-8 flex flex-col gap-4"
+    >
       <div className="dark:invert flex justify-center gap-6">
         <SocialIcon
           url="https://github.com/wuhoops"
@@ -21,10 +23,12 @@ const footer = () => {
           fgColor="black"
         />
       </div>
+      {/* <p className="text-white dark:text-black text-center">
+        - No hugs or kisses, only bugs and fixes -
+      </p> */}
       <p className="text-white dark:text-black text-center">
-          - No hugs or kisses, only bugs and fixes -
-        </p>
-      <p className="text-white dark:text-black text-center"> Copyright &copy; 2023 Wuhoops. All Rights Reserved</p>
+        Copyright &copy; 2023 Wuhoops. All Rights Reserved
+      </p>
     </div>
   );
 };
