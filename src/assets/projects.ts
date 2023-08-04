@@ -52,7 +52,7 @@ const PROJECTS = [
     description: "My portfolio website.",
     year: "2023",
     stack: ["React","TypeScript", "Tailwind", "MUI"],
-    src: "https://github.com/wuhoops",
+    src: "https://github.com/wuhoops/wuhoops_port",
     alt: "wuhoops-portfoilo",
     image: "/images/wuhoops.png",
   },

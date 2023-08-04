@@ -9,9 +9,7 @@ const projects = () => {
       id="projects"
       className="min-h-screen bg-zinc-100 dark:bg-zinc-900 flex flex-col justify-center items-center "
     >
-      <p
-        className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px]"
-      >
+      <p className="text-black dark:text-white text-4xl font-bold mb-10 mt-[120px]">
         Projects
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-14 gap-10 mx-6 mb-10">
@@ -89,9 +87,7 @@ const projects = () => {
         })}
         <div className="self-center justify-self-center md:justify-self-start">
           <Link to="/projects">
-            <div
-              className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white"
-            >
+            <div className="bg-black  dark:bg-white  text-white  dark:text-black shadow-md transition inline-flex items-center rounded-full px-4 py-2 hover:ring-2 hover:ring-offset-4 hover:ring-offset-zinc-100 dark:hover:ring-offset-zinc-900 hover:ring-black dark:hover:ring-white">
               <p>See more</p>
               <IoIosArrowForward />
             </div>
