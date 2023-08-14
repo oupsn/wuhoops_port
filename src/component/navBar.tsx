@@ -83,7 +83,7 @@ export default function NavBar() {
                       handleClickScroll(item.href);
                     }}
                     className={classNames(
-                      "text-zinc-600 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-100 block rounded-md px-3 py-2 text-base font-medium cursor-pointer"
+                      "text-zinc-600 dark:text-zinc-300 hover:bg-zinc-300 dark:hover:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-100 block rounded-md px-3 py-2 text-base font-medium cursor-pointer transition-all"
                     )}
                   >
                     {item.name}
