@@ -8,7 +8,7 @@ const about = () => {
       className="transition-all text-black dark:text-white min-h-screen bg-zinc-100 dark:bg-zinc-900 flex justify-center"
     >
       <div
-        data-aos="fade-up"
+        data-aos="zoom-in"
         className="mt-32 max-w-6xl px-10 flex flex-col gap-20"
       >
         <Skeleton
