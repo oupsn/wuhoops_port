@@ -21,19 +21,19 @@ const PROJECTS = [
     image: "/images/modlifes.png",
     design: "https://www.figma.com/file/GwCKbsdQ7s5niNkTe8M1ZP/Shortnote_wireframe?type=design&mode=design&t=kJIaoc0LevSb7uWb-1"
   },
-  {
-    id: "02",
-    topic: "Paigun",
-    description: "Integrated project II. A ride-sharing application.",
-    year: "2023",
-    stack: ["Flutter", "Supabase", "Onesignal", "FCM", "Firebase", "Figma"],
-    res: ["Developed on both frontend and backend.", "Design UX/UI.", "Implement push notification system using Firebase cloud masseging integrated with Onesignal."],
-    src: "https://github.com/wuhoops/Paigun",
-    alt: "paigun",
-    image: "/images/paigun.png",
-    design:
-      "https://www.figma.com/file/qAisD2zLDVqHujvx5vSnTT/Pai-Gun?type=design&node-id=0%3A1&mode=design&t=kJIaoc0LevSb7uWb-1",
-  },
+  // {
+  //   id: "02",
+  //   topic: "Paigun",
+  //   description: "Integrated project II. A ride-sharing application.",
+  //   year: "2023",
+  //   stack: ["Flutter", "Supabase", "Onesignal", "FCM", "Firebase", "Figma"],
+  //   res: ["Developed on both frontend and backend.", "Design UX/UI.", "Implement push notification system using Firebase cloud masseging integrated with Onesignal."],
+  //   src: "https://github.com/wuhoops/Paigun",
+  //   alt: "paigun",
+  //   image: "/images/paigun.png",
+  //   design:
+  //     "https://www.figma.com/file/qAisD2zLDVqHujvx5vSnTT/Pai-Gun?type=design&node-id=0%3A1&mode=design&t=kJIaoc0LevSb7uWb-1",
+  // },
   {
     id: "03",
     topic: "Checkmate",
