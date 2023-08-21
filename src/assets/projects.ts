@@ -56,16 +56,16 @@ const PROJECTS = [
     alt: "wuhoops-portfoilo",
     image: "/images/wuhoops.png",
   },
-  {
-    id: "05",
-    topic: "929EXAM",
-    description: "CSC105 web-app development exam.",
-    year: "2022",
-    stack: ["React", "JavaScript", "Bootstrap", "ReactStrap"],
-    src: "https://github.com/wuhoops/929EXAM",
-    alt: "929exam",
-    image: "/images/929exam.png",
-  },
+  // {
+  //   id: "05",
+  //   topic: "929EXAM",
+  //   description: "CSC105 web-app development exam.",
+  //   year: "2022",
+  //   stack: ["React", "JavaScript", "Bootstrap", "ReactStrap"],
+  //   src: "https://github.com/wuhoops/929EXAM",
+  //   alt: "929exam",
+  //   image: "/images/929exam.png",
+  // },
 ];
 
 export default PROJECTS;
