@@ -5,6 +5,7 @@ import NotFound from "./page/notFound";
 import Backyard from "./page/backyard";
 import { DarkModeProvider } from "./context/darkModeContext";
 import { ParallaxProvider } from "react-scroll-parallax";
+import AllProjects from "./page/allProjects.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<AllProjects />} />
               <Route path="/backyard" element={<Backyard />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
