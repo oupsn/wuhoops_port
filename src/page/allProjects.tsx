@@ -23,7 +23,7 @@ const AllProjects = () => {
                     Projects
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-14 gap-10 mx-6 mb-10">
-                    {PROJECTS.map((pj) => {
+                    {PROJECTS.map((pj: any) => {
                         return (
                             <div data-aos="zoom-in">
                                 <div
@@ -57,7 +57,7 @@ const AllProjects = () => {
                                             {pj.res != null ? (
                                                 <div>
                                                     <p className="font-bold">Responsibilities</p>
-                                                    {pj.res?.map((res) => {
+                                                    {pj.res?.map((res: any) => {
                                                         return (
                                                             <p
                                                                 key={res}
