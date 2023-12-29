@@ -64,7 +64,7 @@ const PROJECTS = [
         stack: ["Next.js", "Typescript", "TailwindCSS", "Go", "Go Fiber", "PostgreSQL"],
         res: ["Developed on both frontend and backend.", "Develop backend with Hexagonal architecture.", "Design database on relational database"
         ],
-        src: "https://github.com/wuhoops/",
+        src: "https://github.com/wuhoops/linkmap-backend",
         alt: "linkmap",
         image: "/images/linkmap.png",
     },
