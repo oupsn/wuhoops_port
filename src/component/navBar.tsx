@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { DarkModeContext } from "../context/darkModeContext";
 import { MdModeNight, MdLightMode } from "react-icons/md";
+import {useNavigate} from "react-router-dom";
 
 const navigation = [
   { name: "About", href: "about" },
@@ -25,6 +26,7 @@ const handleClickScroll = (target: string) => {
 export default function NavBar() {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
   const isMobile = useMediaQuery({ query: `(max-width: 639px)` });
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   useEffect(() => {
     setOpen(false);
@@ -67,10 +69,11 @@ export default function NavBar() {
                 onClick={() => {
                   handleClickScroll("hero");
                   setOpen(false);
+                  navigate('/')
                 }}
                 className="z-[999] text-black dark:text-white block px-3 py-1 text-xl cursor-pointer font-bold"
               >
-                WUHOOPS
+                OUPSN
               </p>
             </div>
             <div className="hidden sm:ml-6 sm:block">

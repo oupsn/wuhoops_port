@@ -19,7 +19,7 @@ const hero = () => {
           data-aos-duration="1600"
           className="text-xl font-medium text-blac"
         >
-          Hi there, Wu's here.
+          Hi there, Ou's here.
         </span>
       </Parallax>
     </div>

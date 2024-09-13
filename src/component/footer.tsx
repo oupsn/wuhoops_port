@@ -8,12 +8,12 @@ const footer = () => {
     >
       <div className="dark:invert flex justify-center gap-6">
         <SocialIcon
-          url="https://github.com/wuhoops"
+          url="https://github.com/oupsn"
           bgColor="white"
           fgColor="black"
         />
         <SocialIcon
-          url="https://www.linkedin.com/in/wuhoops/"
+          url="https://www.linkedin.com/in/oupsn/"
           bgColor="white"
           fgColor="black"
         />
@@ -27,7 +27,7 @@ const footer = () => {
         - No hugs or kisses, only bugs and fixes -
       </p> */}
       <p className="text-white dark:text-black text-center">
-        Copyright &copy; 2023 Wuhoops. All Rights Reserved
+        Copyright &copy; 2024 Oupsn. All Rights Reserved
       </p>
     </div>
   );
