@@ -49,7 +49,6 @@ const projects = () => {
                                         className="absolute text-black dark:text-white p-4 w-full h-full transition-all duration-300 scale-0 group-hover:scale-100 rounded-full flex flex-col justify-center items-center">
                                         {pj.res != null ? (
                                             <div>
-                                                <p className="font-bold">Responsibilities</p>
                                                 {pj.res?.map((res) => {
                                                     return (
                                                         <p
@@ -59,7 +58,6 @@ const projects = () => {
                                                     );
                                                 })}
                                                 <br/>
-                                                <p className="font-bold mb-2">Tech stack</p>
                                                 <div>
                                                     {StackChips({stacks: pj.stack, isExample: false})}
                                                 </div>

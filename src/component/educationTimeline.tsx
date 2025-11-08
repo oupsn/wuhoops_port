@@ -28,7 +28,7 @@ const educationTimeline = () => {
           King Mongkut's University of Technology Thonburi (KMUTT)
         </p>
         <time className="block mb-2 font-normal leading-none text-gray-400 dark:text-gray-500">
-          2021 - Present
+          2021 - 2025
         </time>
       </div>
     </div>
